@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3437680177739068811}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.372069, y: 9.19754, z: 12.75825}
+  m_LocalPosition: {x: 5.93, y: 38.19, z: 13.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 2350017109094071081}
   - component: {fileID: 3014472707730350064}
   - component: {fileID: 1602025621834093837}
-  - component: {fileID: 3159640281663658380}
+  - component: {fileID: 2524719831278830519}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -291,8 +291,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 14.678435, z: 0.94786453}
-  m_Center: {x: 1.7765838e-15, y: -6.839216, z: -0.026067734}
+  m_Size: {x: 1, y: 14.678435, z: 1.920742}
+  m_Center: {x: -9.826514e-16, y: -6.8392158, z: -0.5125065}
 --- !u!54 &1602025621834093837
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -320,7 +320,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 14
   m_CollisionDetection: 0
---- !u!114 &3159640281663658380
+--- !u!114 &2524719831278830519
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -332,3 +332,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 725d395b9eaa9204489d097ec3df18a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fanForce: 100
+  windDirection: {x: 1, y: 0, z: 1}
