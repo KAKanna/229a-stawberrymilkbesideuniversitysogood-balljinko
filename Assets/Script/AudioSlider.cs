@@ -15,7 +15,7 @@ public class AudioSlider : MonoBehaviour
 
     private void Start()
     {
-        Mixer.SetFloat("Volume", Mathf.Log10(PlayerPrefs.GetFloat("Volume", 0.25f) * 20));
+        Mixer.SetFloat("Volume", Mathf.Log10(PlayerPrefs.GetFloat("Volume", 0.5f) * 20));
     }
 
     private void Update()
