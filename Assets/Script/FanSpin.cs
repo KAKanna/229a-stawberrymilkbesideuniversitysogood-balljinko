@@ -12,6 +12,6 @@ public class FanSpin : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.AddTorque(torque, 0, 0);
+        rb.AddTorque(0, torque, 0);
     }
 }
