@@ -9,7 +9,8 @@ public class SpawnBall : MonoBehaviour
     public Transform spawnPoint; 
     public TMP_InputField ballInputField; 
     public TMP_Text remainingBallsText; 
-    public float spawnDelay = 0.5f; 
+    public float spawnDelay = 0.5f;
+    [SerializeField]private GameObject deployButton;
 
     private int remainingBalls = 0; //เก็บจำนวนบอลที่เหลือ
 
@@ -21,6 +22,7 @@ public class SpawnBall : MonoBehaviour
             remainingBalls = count; //กำหนกบอลที่ต้องSpawn
             UpdateRemainingBallsUI();
             ballInputField.gameObject.SetActive(false);
+            deployButton.gameObject.SetActive(false);
             StartCoroutine(SpawnBalls(count));
         }
     }
@@ -35,7 +37,7 @@ public class SpawnBall : MonoBehaviour
             yield return new WaitForSeconds(spawnDelay); // รอบอล
         }
 
-        ballInputField.gameObject.SetActive(true);
+        //ballInputField.gameObject.SetActive(true);
         ballInputField.text = ""; //กุก็หาตั่งนาน สรุปมันต้อง .textด้วย ครวบ
     }
 
