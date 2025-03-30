@@ -38,7 +38,7 @@ public class Ball : MonoBehaviour
             if (hitPrefabScore0 != null)
             {
                 GameObject effect = Instantiate(hitPrefabScore0, transform.position, Quaternion.identity);
-                Destroy(effect, 1f);
+                Destroy(effect, 0.5f);
             }
         }
         if (collision.gameObject.name == "1 Score" || collision.gameObject.name == "1 Score (1)")
@@ -46,7 +46,7 @@ public class Ball : MonoBehaviour
             if (hitPrefabScore1 != null)
             {
                 GameObject effect = Instantiate(hitPrefabScore1, transform.position, Quaternion.identity);
-                Destroy(effect, 1f);
+                Destroy(effect, 0.5f);
             }
         }
         if (collision.gameObject.name == "3 Score" || collision.gameObject.name == "3 Score (1)")
@@ -54,7 +54,7 @@ public class Ball : MonoBehaviour
             if (hitPrefabScore3 != null)
             {
                 GameObject effect = Instantiate(hitPrefabScore3, transform.position, Quaternion.identity);
-                Destroy(effect, 1f);
+                Destroy(effect, 0.5f);
             }
         }
         if (collision.gameObject.name == "5 Score" || collision.gameObject.name == "5 Score (1)")
@@ -62,7 +62,7 @@ public class Ball : MonoBehaviour
             if (hitPrefabScore5 != null)
             {
                 GameObject effect = Instantiate(hitPrefabScore5, transform.position, Quaternion.identity);
-                Destroy(effect, 1f);
+                Destroy(effect, 0.5f);
             }
         }
         if (collision.gameObject.name == "PajinkoBall" || collision.gameObject.name == "PajinkoBall(Clone)")
